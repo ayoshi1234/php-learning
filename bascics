@@ -1,0 +1,40 @@
+<?php
+//class , object , constructor function
+
+// a class is made 
+class abc{
+    
+    function show(){
+            echo "thsi is the first function"."<br>";
+            echo "<br>"."<br>";
+    }
+
+    function show2(){
+        echo "thsi is the second function"."<br>";
+        echo "<br>"."<br>";
+    }
+
+    
+    function show3(){
+        echo "thsi is the third function"."<br>";
+        echo "<br>"."<br>";
+    }
+
+    
+    function show4(){
+        echo "thsi is the fourth function"."<br>";
+        echo "<br>"."<br>";
+    }
+}
+
+$b = new abc();
+$b->show();
+$b->show2();
+
+$a= new abc();  // class calling 
+$a->show(); // object made and class functions are called . -> shows that 
+//object is created 
+
+
+
+?>
