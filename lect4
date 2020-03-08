@@ -1,0 +1,14 @@
+<?php
+// STATIC VARIABLE AND FUNCTIUON 
+class abc{
+    public static $name="taha";
+
+    static function show(){
+        echo "static funaction is made ";
+    }
+
+}
+
+abc:: show();
+echo abc::$name; // jab variable banao tab echo ka keyword place karna 
+?>
