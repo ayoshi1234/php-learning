@@ -1,0 +1,45 @@
+<?php
+
+//calling all fuv=nctions staic and still calling them 
+//               
+class parent_abc{
+
+    function __construct(){
+        echo "constructor is called "."<br>";
+    }
+    
+    static function final_show(){
+        echo "final function shown"."<br>";
+    }
+}
+
+class child_1 extends parent_abc{
+        static function show1(){
+              echo "how are you ?"."<br>";
+        }
+}
+
+class child_2 extends child_1{
+        static function show2(){
+                   echo "i am fine "."<br>";
+        }
+}
+
+class child_3 extends child_2{
+        static function show3(){
+              echo "i am also fine "."<br>";
+        }
+}
+
+
+// now store it in a variable 
+// lets start
+//
+//$b= new child_3; //object create of child 3 ab functions call karo
+
+
+child_3::show3();
+child_3::show2();
+child_3::show1();
+child_3::final_show();
+?>
