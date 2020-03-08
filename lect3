@@ -1,0 +1,21 @@
+<?php
+
+// CONSTRUCTOR AND DESRUCTOR FUNCTION
+//               
+class parent_abc{
+
+    function __construct($name,$batch){
+        $this ->name=$name; // object variablke name ke andar store hoga
+        $this ->batch=$batch;  // object variable  batch ke andar store hoga
+    }
+    
+    function __destruct(){
+            echo "Student Name: {this->name}";
+            echo "Student Batch: {this->batch}";
+    }
+}
+
+$a= new parent_abc("ayoshi","1807E");
+
+
+?>
