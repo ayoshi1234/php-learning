@@ -1,0 +1,81 @@
+
+<doctype html>
+<html>
+
+<!--ham alag se html tag khol kar us ke andar htmlmdefine karein gei  -->
+        <h1>
+          how are you ??
+        </h1>
+</html>
+
+<?php
+$a=array(
+    array("azhar","1807e"),
+    array("anusha","1901e"),
+    array("aisha","1209e")
+);
+
+
+
+
+echo $a[0][0].$a[0][1];
+echo "<br>"."<br>";
+echo $a[1][0].$a[1][1];
+echo "<br>"."<br>";
+echo $a[2][0].$a[2][1];
+echo "<br>"."<br>";
+
+for ($i=0; $i <3 ; $i++) { 
+    # code...\
+    for ($j=0; $j <2; $j++) { 
+        # code...
+        echo $a[$i][$j];
+        echo "<br>"."<br>";
+    }
+}
+
+echo "<br>"."<br>";
+echo "<br>"."<br>";
+
+
+class abc{
+    #CONSTRUCT IS USED TO ADDA CONSTRUCTOR FUNCTION:
+    function __construct($name,$batch)
+    {
+        echo $name ." ". $batch ."<br>";
+    }
+    #this is used as aconstructor function
+    #jab class call hongei toh constructor call hogi 
+
+    function show(){
+        echo "first function"."<br>";
+    }
+
+    function show1(){
+        echo "second function"."<br>" ;
+    }
+
+    function show2(){
+        echo "this is the ";
+    }
+}
+
+#INHERITANCE DONE USING EXTEND KEYWORD
+#XYZ IS A CHILD OF ABC
+class xyz extends abc {
+    function show3(){
+        echo "child class function created ";
+    }
+}
+
+$b= new xyz("ayoshi", "1807e");
+
+$b->show1();
+$b->show3();
+
+$a= new abc("ayoshi","1807e");
+$a->show();
+$a-> show1();
+
+
+?>
